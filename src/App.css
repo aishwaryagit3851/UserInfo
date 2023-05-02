@@ -2,37 +2,111 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.details{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 80vw;
+  
+}
+.photos-container{
+  display: grid;
+}
+.userlistcontainer{
+  display: flex;
+}
+.userlist{
+  background-color: antiquewhite;
+  width: 20vw;
+  padding: 0.5%;
+  height: 100vh;
+}
+thead,tbody{
+  margin: 2% 1% 2% 1%;
+}
+th{
+  font-size: 1.3vw;
+  
+}
+td{
+  font-size: 1.2vw;
+ 
+}
+h3{
+  font-size: 2.5vw;
+}
+.containers{
+  background-color:bisque;
+}
+.modal-body{
+  background-color: rgb(226, 226, 178);
+}
+.modal-content{
+  background-color: beige;
+}
+.tablecss{
+  border: 1px solid black;
+}
+.tdcss,.thcss{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.comment-container{
+  height: fit-content;
+  width: fit-content;
+}
+.focus:hover{
+  background-color: black;
+  color:white;
+}
+.search{
+ 
+  border-radius: 6%;
+  padding: 1%;
+  margin: 1%;
+  background-color: white;
+
+}
+.album-inner{
+  width: fit-content;
+  
+}
+.album-container{
+  
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
+.details-container{
+  box-shadow: 5px 5px rgb(207, 197, 197);
+  background-color: beige;
+ 
+  margin: 0% 4% 0% 4%;
+  border-radius: 5%;
+  text-align: center;
 
-.App-link {
-  color: #61dafb;
 }
+.popup{
+  position:fixed;
+ 
+  width: 20vw;
+  height: 10vh;
+  top: 10%;
+  left: 40%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-inner{
+  position:relative;
+  padding:35px;
+  width:100%;
+  max-width:50vw;
+  background-color: rgb(214, 192, 192);
+}
+.popup-inner .close-btn{
+  position:absolute;
+  top:16px;
+  right:16px;
 }
